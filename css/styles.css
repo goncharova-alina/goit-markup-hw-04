@@ -110,8 +110,8 @@ body {
     padding-bottom: 32px;
 }
 .navigation-list-link,
-.header-mail-link link,
-.header-tel-link link{
+.header-mail-link ,
+.header-tel-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -129,14 +129,17 @@ body {
 }
 
 .header-mail-link,
-.header-tel-link{
+.header-tel-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--text-description-color);
 }
-.header-mail-link {
-   color: #757575;
-}
-.header-mail-link-svg {
-  fill: currentColor;  
+ 
+.header-mail-link-svg, 
+.header-tel-link-svg {
+    margin-right: 10px;
+    fill: currentcolor;  
  
 }
 /* Hero section */
@@ -317,16 +320,16 @@ color: var(--title-dark-theme-color);
     align-items: center;
 }
 .social-list-item-link:hover{
-    background-color: #2196F3;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 .social-list-item-link-svg {
     fill: currentcolor;
     width: 20px;
     height: 20px;
 }
-.social-list-item-link-svg:hover {
-    fill: #FFFFFF;
-}
+
+
 /* Наши клиенты */
 .our-client-list {
     display: flex;
@@ -335,29 +338,26 @@ color: var(--title-dark-theme-color);
 .our-client-list-item:not(:last-child) {
     margin-right: 30px;
 }
-.our-client-list-item {
+     
+.our-client-list-item-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #AFB1B8;
     width: 170px;
     height: 90px;
-    
     border: 1px solid #AFB1B8;
-    border-radius: 4px;     
-}
-.our-client-list-item-link {
-    color: #AFB1B8;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    border-radius: 4px;  
 }
  .our-client-list-item-link-svg {
     fill: currentColor;
 }
 .our-client-list-item-link-svg:hover{
-    fill: var(--accent-color);
+    
 }
-.our-client-list-item:hover {
-    border-color: #2196F3;
+.our-client-list-item-link:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Футер */
