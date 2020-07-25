@@ -132,6 +132,14 @@ body {
 .header-tel-link{
     color: var(--text-description-color);
 }
+.header-mail-link {
+   color: #757575;
+}
+.header-mail-link-svg {
+  fill: currentColor;  
+  width: 16px;
+  height: 11px;
+}
 /* Hero section */
 .hero {
     max-width: 1600px;
@@ -173,8 +181,8 @@ color: var(--title-dark-theme-color);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--title-dark-theme-color);
+    background-color:var(--accent-color);
+    color:var(--title-dark-theme-color);
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -225,7 +233,7 @@ color: var(--title-dark-theme-color);
     margin-bottom: 10px;
 }
 .subtitle{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -292,14 +300,34 @@ color: var(--title-dark-theme-color);
 }
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-right: 32px;
     padding-bottom: 24px;
+    padding-left: 32px;
+}
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-list-item-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-item-link:hover{
+    background-color: #2196F3;
 }
 .social-list-item-link-svg {
+    fill: currentcolor;
     width: 20px;
     height: 20px;
 }
-
+.social-list-item-link-svg:hover {
+    fill: #FFFFFF;
+}
 /* Наши клиенты */
 .our-client-list {
     display: flex;
@@ -318,10 +346,8 @@ color: var(--title-dark-theme-color);
     border-radius: 4px;     
 }
 
-.our-client-list-item-link-svg {
-   
-    /* width: 44px; */
-    height: 50px;
+ .our-client-list-item-link-svg {
+   height: 50px;
 }
 
 
@@ -371,6 +397,29 @@ color: var(--title-dark-theme-color);
     }
     .subscribe-list {
         display: flex;
+    }
+    .subscribe-list-item-link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+        justify-content: center;
+        align-items: center; 
+    
+}
+.subscribe-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.subscribe-list-item:hover{
+    border-radius: 50%;
+    background: #2196F3;
+}    
+    .subscribe-list-item-link-svg {
+        fill: currentcolor;
+        width: 20px;
+        height: 20px;
     }
     /* Страница " Портфолио" */
     /* Радио кнопки */
